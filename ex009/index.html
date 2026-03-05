@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>Listas Ordenadas</h2>
+
+    <ol type="i"> <!-- 1 A a I i -->
+        <li>acordar</li>
+        <li>banho e associados</li>
+        <li>treinar</li>
+        <li>almoçar</li>
+        <li>remote work</li>
+        <li>treinar</li>
+        <li>voltar pra casa</li>
+        <li>jantar</li>
+        <li>dormir</li>
+        <!-- o fechamento da tag </li> não é obrigatório no html5 -->
+    </ol>
+
+    <h2>Listas Não Ordenadas</h2>
+    <ul type="square"> <!-- Disc (padrão)/Circle/Square --> 
+        <li>pão</li>
+        <li>bebida vegetal</li>
+        <li>manteiga</li>
+        <li>detergentes</li>
+        <li>arroz</li>
+        <li>água engarrafada</li>
+    </ul>
+
+    <h2>Linguagens</h2>
+
+    <li>Linguagens Antigas</li>
+    <ol type="a">
+            <li>clipper</li>
+            <li>visual basic</li>
+            <li>fortran</li>
+            <li>delphi</li>
+    </ol>
+
+    <li>Linguagens Novas</li>
+    <ol type="a" start="5">
+        <li>PHP</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Kotlin</li>
+        <!-- lista alfanumérica; start é um parâmetro númerico, inserimos o 5 elemento para ser o E  da lista -->
+         <!-- a forma correcta de fazer é sem o parâmetro start mas fica a título de exemplo -->
+    </ol>
+
+    <h2>Jogos Favoritos</h2>
+    <ol>
+        <li>PlayStation</li>
+        <ul type="disc">
+            <li>Hogwarts</li>
+            <li>Need For Speed</li>
+            <li>PES</li>
+            <li>WWE</li>
+        </ul>
+        <li>Nintendo</li>
+        <ul type="disc">
+            <li>Mario Bros</li>
+        </ul>
+        <li>Sega</li>
+        <ul type="disc">
+            <li>Street Fighter</li>
+        </ul>
+        <!-- é muito utilizado criar listas dentro de listas. EX: menus podem ser listas dentro de listas -->
+    </ol>
+
+    <h2>Definition List</h2>
+    <dl>
+        <dt>HTML5</dt>
+        <!-- termo dt -->
+        <dd>Linguagem de Marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS3</dt>
+        <dd>Linguagem de Marcação para a estilização/design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de Programação para a criação de interatividade de um site.</dd>
+        <!-- Facilita os motores de busca, o Google valoriza sites assim -->
+    </dl>
+    
+
+    
+    
+</body>
+</html>

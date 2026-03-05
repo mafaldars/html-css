@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Utilizar links externos</h1>
+    <p>
+        Pode acessar o meu <a href="https://github.com/mafaldars?tab=repositories" target="_blank" rel="external" >repositório público no Github.</a>
+    </p>
+
+    <p>
+        Pode também aceder a um vídeo no Youtube que explica step by step <a href="https://www.youtube.com/watch?v=TNQsmPf24go&t=2s" target="_blank" rel="external">como funciona a Internet</a>. É muito recomendado.
+    </p>
+
+    <!-- estes parâmetros do target _blank e do rel external, abrem uma nova tab do link, mantendo sempre o meu site aberto anyway -->
+
+    <h2>Links Internos</h2>
+
+    <p>
+        Esta é a primeira página do site. Para acessar <a href="page002.html" rel="next" target="_self">a segunda página</a> âncoramos a mesma.
+        <!-- ancoramos para o nosso site -->
+    </p>
+
+    <p>
+        Podemos aceder à página de <a href="notícias/page003.html">notícias</a>.
+    </p>
+
+    <h1>Links para Download</h1>
+    <ul>
+        <li>
+            <a href="https://imprensanacional.pt/?w3n_livros_pdf=o-crime-do-padre-amaro" download=">https://imprensanacional.pt/?w3n_livros_pdf=o-crime-do-padre-amaro" type="application/pdf">Download do livro em PDF</a>
+        </li>
+        <li>
+            <a href="livro/Crime-do-Padre-Amaro_Digital_V2.pdf.zip" download="livro/Crime-do-Padre-Amaro_Digital_V2.pdf.zip" type="application/zip">Download do livro em ZIP</a>
+        </li>
+        <!-- # enquanto não obtivermos a URL/link, colocar temporariamente # -->
+         <! -- 
+    </ul>
+
+
+    
+</body>
+</html>

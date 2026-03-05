@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">Mídias em HTML</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Imagem Dinâmica</h1>
+
+    <p>Tente abrir este site em gadgets diferentes ou simplesmente aumente e diminua o tamanho do navegador. </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem flexível">
+    </picture>
+
+    <!-- a max width coloquei com o valor da imagem real e dei 50px de margem da viewport. Melhora a experiência do user -->
+
+    <h1>Reproduzir Áudios</h1>
+
+    <p>reproduzir áudio do Youtube Studio</p>
+
+    <audio src="midia/musica1.mp3" controls autoplay></audio>
+     
+    <!-- só o autoplay pode não funcionar em todos os navegadores. Por segurança colocar controls autoplay -->
+
+    <!-- MP3 WAV OGG -->
+    
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+
+        body {
+            font-family: monospace;
+            background-image: linear-gradient(to right, rgb(108, 129, 235), rgb(62, 68, 112));
+            margin: 0px;
+        }
+
+        header {
+            background-color: rgb(242, 236, 236);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            box-shadow: inset 3px 3px 14px 5px rgba(0, 0, 0, 0.401);
+        }
+
+        nav {
+            background-color: rgb(193, 195, 197);
+            padding: 3px;
+            box-shadow: 2px 2px 4px  1px rgba(0, 0, 0, 0.531);
+            /* 
+            deslocamento vertical, espalhamento e sombra
+            */
+
+        }
+
+        nav > a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgb(242, 236, 236);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.385);
+        }
+
+        article {
+            background-color: rgb(211, 211, 211);
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(141, 160, 192);
+
+        }
+
+        footer {
+            background-image: linear-gradient(to left, rgb(108, 129, 235), rgb(62, 68, 112));
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- Todas são como se fossem <div> mas são semânticas com novos nomes. Sentido semântico HTML5. -->
+    <header>
+        <h1>Teste de site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Tech, Desportos e Política</p>
+
+        </section>
+        
+        <section id="noticias">
+            <article>
+                <h2>Notícias de última hora</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa et explicabo aperiam enim quae mollitia reiciendis, ipsam amet? Reiciendis eius atque porro laboriosam quibusdam odio beatae vero quos! Non, inventore.</p>
+                <aside>
+                    Artigo escrtito por Saramago.
+                </aside>
+            </article>
+
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Desenvolvido por Gulag
+        </p>
+    </footer>
+
+    <div id="bola">
+
+    </div>
+    
+</body>
+</html>
