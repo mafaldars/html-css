@@ -1,2 +1,2 @@
 # html-css
- HTML5 and CSS3 - gerenciar repositórios
+ HTML5 and CSS3
