@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1></h1>
+    <h1></h1>
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(ex021/imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: chocolate;
+    
+        }
+
+        #conteudo {
+            background-image: url(ex021/imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: brown;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+            /* 
+            Transform - é mexer em qualquer box efetuando alguma transformação nela;
+            translate() - direita/esquerda - negativo roda pra esquerda, positivo roda pra direita;
+            scale() - aumentar/diminuir;
+            perspective();
+            rotate().
+            */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Alinhamento vertical</h1>
+
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
