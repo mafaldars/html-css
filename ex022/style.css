@@ -1,13 +1,24 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital@0;1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte1: Verdana, Tahoma, sans-serif;
+    --fonte2: 'Passione One', cursive;
+    --fonte3: 'Kaushan Script', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
+    
     min-height: 100vh; /* ou 100% */ 
     background-color: darkgrey;
+    font-family: var(--fonte1);
     
 
 }
@@ -21,11 +32,13 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /* menos gritante do que o text-transform-uppercase */
+    font-family: var(--fonte2);
+    font-size: 10vw;
     
 }
 
 header > p {
-    padding-top: 50px;
+    padding-bottom: 50px;
 
 }
 
@@ -45,6 +58,12 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -54,16 +73,36 @@ section.normal {
 }
 
 section.imagem {
-    background-color: rgb(51, 51, 51);
+    background-color: rgba(0, 0, 0, 0.282);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.363);
+    background-size: cover;
+    background-attachment: fixed;
 
 
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.499);
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.37);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 2px 2px 0px black;
 }
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    
+
+}
+
 
 footer {
     background-color: black;
