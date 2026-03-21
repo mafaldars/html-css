@@ -4,13 +4,339 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        table {
+            width: 500px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            
+        }
+
+        thead, tfoot {
+            background-color: rgb(95, 94, 94);
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
 
     <h1>Tabela nº 2</h1>
     <h2>Uso de tabelas grandes</h2>
 
-    <!-- Anatomia para tabelas grandes -->
+    <!-- 
+    ANATOMIA PARA TABELAS GRANDES
+     
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Brasão</th>
+                <th>Abr.</th>
+                <th>Cantão</th>
+                <th>Adesão</th>
+                <th>Capital</th>
+                <th>População</th>
+                <th>Língua Oficial</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td><img src="imagens/Zürich.webp" alt="Zürich image"></td>
+                <td>ZH</td>
+                <td>Zürich</td>
+                <td>1351</td>
+                <td>Zürich</td>
+                <td>1 284 052</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Bern.png" alt="Bern image"></td>
+                <td>BE</td>
+                <td>Bern</td>
+                <td>1353</td>
+                <td>Bern</td>
+                <td>958 897</td>
+                <td>alemão, francês</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Luzern.png" alt="Luzern image"></td>
+                <td>LU</td>
+                <td>Luzern</td>
+                <td>1332</td>
+                <td>Luzern</td>
+                <td>359 110</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Uri.png" alt="Uri image"></td>
+                <td>UR</td>
+                <td>Uri</td>
+                <td>1291</td>
+                <td>Altdorf</td>
+                <td>34 948</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Schwyz.png" alt="Schwyz image"></td>
+                <td>SZ</td>
+                <td>Schwyz</td>
+                <td>1291</td>
+                <td>Schwyz</td>
+                <td>138 832</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Obwalden.png" alt="Obwalden image"></td>
+                <td>OW</td>
+                <td>Obwalden</td>
+                <td>1291</td>
+                <td>Sarnen</td>
+                <td>33 755</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Nidwalden.png" alt="Nidwalden image"></td>
+                <td>NW</td>
+                <td>Nidwalden</td>
+                <td>1291</td>
+                <td>Stans</td>
+                <td>40 012</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Glarus.png" alt="Glarus image"></td>
+                <td>GL</td>
+                <td>Glarus</td>
+                <td>1352</td>
+                <td>Glarona</td>
+                <td>38 084</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Zug.png" alt="Zug image"></td>
+                <td>ZG</td>
+                <td>Zug</td>
+                <td>1352</td>
+                <td>Zug</td>
+                <td>107 171</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Freiburg.png" alt="Freiburg"></td>
+                <td>FR</td>
+                <td>Freiburg</td>
+                <td>1481</td>
+                <td>Freiburg</td>
+                <td>258 252</td>
+                <td>alemão, francês</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Solothurn.png" alt="Solothurn image"></td>
+                <td>SO</td>
+                <td>Solothurn</td>
+                <td>1481</td>
+                <td>Soleura</td>
+                <td>248 613</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Basel.png" alt="Basel image"></td>
+                <td>BS</td>
+                <td>Basel Stadt</td>
+                <td>1501</td>
+                <td>Basel</td>
+                <td>184 822</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Basel Landschaft.png" alt="Basel Landschaft image"></td>
+                <td>BL</td>
+                <td>Basel Landschaft</td>
+                <td>1501</td>
+                <td>Liestal</td>
+                <td>267 166</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Schaffhausen.png" alt="Schaffhausen image"></td>
+                <td>SH</td>
+                <td>Schaffhausen</td>
+                <td>1501</td>
+                <td>Schaffhausen</td>
+                <td>73 866</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Appenzell Ausserrhoden.png" alt="Appenzell Ausserrhoden image"></td>
+                <td>AR</td>
+                <td>Appenzell Ausserrhoden</td>
+                <td>1513</td>
+                <td>Herisau</td>
+                <td>52 509</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Appenzell Innerrhoden.png" alt="Appenzell Innerrhoden image"></td>
+                <td>AI</td>
+                <td>Appenzell Innerrhoden</td>
+                <td>1513</td>
+                <td>Appenzell</td>
+                <td>15 300</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/St. Gallen.png" alt="St. Gallen image"></td>
+                <td>SG</td>
+                <td>St. Gallen</td>
+                <td>1803</td>
+                <td>St. Gallen</td>
+                <td>461 810</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Graubünden.png" alt="Graubünden image"></td>
+                <td>GR</td>
+                <td>Graubünden</td>
+                <td>1803</td>
+                <td>Coira</td>
+                <td>187 920</td>
+                <td>alemão, romanche, italiano</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Aargau.png" alt="Aargau image"></td>
+                <td>AG</td>
+                <td>Aargau</td>
+                <td>1803</td>
+                <td>Aarau</td>
+                <td>574 813</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Thurgau.png" alt="Thurgau image"></td>
+                <td>TG</td>
+                <td>Thurgau</td>
+                <td>1803</td>
+                <td>Fraunfeld</td>
+                <td>235 764</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Tessino.png" alt="Tessino image"></td>
+                <td>TI</td>
+                <td>Tessino</td>
+                <td>1803</td>
+                <td>Bellinzona</td>
+                <td>324 851</td>
+                <td>italiano</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Vaud.png" alt="Vaud image"></td>
+                <td>VD</td>
+                <td>Vaud</td>
+                <td>1803</td>
+                <td>Lausanne</td>
+                <td>662 145</td>
+                <td>francês</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Vallais.png" alt="Valais image"></td>
+                <td>VS</td>
+                <td>Valais</td>
+                <td>1815</td>
+                <td>Sion</td>
+                <td>294 608</td>
+                <td>francês, alemão</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Neuchâtel.png" alt="Neuchâtel image"></td>
+                <td>NE</td>
+                <td>Neuchâtel</td>
+                <td>1815</td>
+                <td>Neuchâtel</td>
+                <td>168 912</td>
+                <td>francês</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Genebra.png" alt="Genebra image"></td>
+                <td>GE</td>
+                <td>Genebra</td>
+                <td>1815</td>
+                <td>Genebra</td>
+                <td>433 235</td>
+                <td>francês</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Jura.png" alt="Jura image"></td>
+                <td>JU</td>
+                <td>Jura</td>
+                <td>1979</td>
+                <td>Delémont</td>
+                <td>69 292</td>
+                <td>francês</td>
+            </tr>
+
+            <tr>
+                <td><img src="imagens/Switzerland.png" alt="Switzerland image"></td>
+                <td>CH</td>
+                <td>Suiça</td>
+                <td>-</td>
+                <td>Bern</td>
+                <td>7 508 739</td>
+                <td>alemão, francês, italiano, romanche</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
     
 </body>
 </html>
