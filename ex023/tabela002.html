@@ -21,19 +21,35 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
             border: 1px solid black;
             text-align: center;
             padding: 10px;
-            
         }
-
+        
         thead, tfoot {
             background-color: rgb(95, 94, 94);
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(95, 94, 94);
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n - 1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {  /* 2n - efeito zebrado */
+            background-color: lightgrey;
+            
+        }
+        
 
     </style>
 </head>
@@ -59,13 +75,13 @@
         <caption>População dos Cantões da Suiça</caption>
         <thead>
             <tr>
-                <th>Brasão</th>
-                <th>Abr.</th>
-                <th>Cantão</th>
-                <th>Adesão</th>
-                <th>Capital</th>
-                <th>População</th>
-                <th>Língua Oficial</th>
+                <th scope="col">Brasão</th>
+                <th scope="col">Abr.</th>
+                <th scope="col">Cantão</th>
+                <th scope="col">Adesão</th>
+                <th scope="col">Capital</th>
+                <th scope="col">População</th>
+                <th scope="col">Língua Oficial</th>
             </tr>
         </thead>
 
@@ -344,7 +360,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
