@@ -8,25 +8,54 @@
         div.container {
             background-color: rgb(202, 94, 94);
             display: flex;
+            flex-flow: row wrap;
         }
 
         div.items {
             background-color: rgb(194, 97, 213);
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            padding: 20px;
+        }
+
+        div#i1 {
+            order: 0;
+        }
+
+        div#i2 {
+            order: -2;
+        }
+
+        div#i3 {
+            order: 4;
+        }
+
+        div#i4 {
+            order: 8;
+        }
+
+        div#i5 {
+            order: 2;
+        }
+
+        div#i6 {
+            order: 0;
+        }
+
+        div#i7 {
+            order: -4;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="items">A</div>
-        <div class="items">B</div>
-        <div class="items">C</div>
-        <div class="items">D</div>
-        <div class="items">E</div>
-        <div class="items">F</div>
-        <div class="items">G</div>
+        <div class="items" id="i1">A</div>
+        <div class="items" id="i2">B</div>
+        <div class="items" id="i3">C</div>
+        <div class="items" id="i4">D</div>
+        <div class="items" id="i5">E</div>
+        <div class="items" id="i6">F</div>
+        <div class="items" id="i7">G</div>
     </div>
     
 </body>
